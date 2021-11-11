@@ -19,9 +19,8 @@ import java.io.*;
 public class FileRead {
 
 
-    public String readFile() throws IOException {
+    public String readFile(String file_name) throws IOException {
 
-        String file_name = "";
         String line = null;
 
         //specify the file name
