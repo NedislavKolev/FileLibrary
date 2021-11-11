@@ -15,6 +15,11 @@ Add the MaNik.FileLibrary-1.0.jar as ExternalLibrary to your IDE
 ```java
 import MaNik.File.*;
 
+/**
+ * @Methods:
+ * readFile
+ * writeToFile
+ */
 class ReadFile {
     //allows you to read a file
 
