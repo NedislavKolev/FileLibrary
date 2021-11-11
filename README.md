@@ -7,6 +7,9 @@ Build by MaNik-IT this Java external library allows you to read and write from a
 
 
 ```
+In terminal
+mvn clean install
+
 Add the MaNik.FileLibrary-1.0.jar as ExternalLibrary to your IDE
 ```
 
