@@ -10,9 +10,11 @@ import java.io.*;
  * Usage:
  * 1.readFile(): reads the content of a file
  *
- * 2.httpExchangeWriter(): writes down data into file(specific method for httpServer)
+ * 2.writeToFile(): writes the input into a file
  *
- * 3.httpServletWriter(): writes down data into file(specific method for Servlet)
+ * //2.httpExchangeWriter(): writes down data into file(specific method for httpServer)
+ *
+ * //3.httpServletWriter(): writes down data into file(specific method for Servlet)
  */
 public class FileRead {
 
@@ -36,38 +38,6 @@ public class FileRead {
         }
         return line;
     }
-
-
-//    public void writeToFile(InputStream stream,String file_name) throws IOException {
-//
-//        InputStreamReader reader1 = new InputStreamReader(stream);
-//        BufferedReader reader  = new BufferedReader(reader1);
-//
-//        try {
-//            //Save the incoming data to a file
-//            FileWriter putWriter = new FileWriter(file_name);
-//
-//            reader.lines().forEach(line -> {
-//                try {
-//                    putWriter.write(line);
-//                } catch (IOException e) {
-//                    e.printStackTrace();
-//                }
-//            });
-//            putWriter.flush();
-//            //close the connection
-//            putWriter.close();
-//            stream.close();
-//            reader.close();
-//            reader1.close();
-//
-//            System.out.println("Received file from client: \n");
-//            System.out.println("Successfully wrote to the file.");
-//        } catch (IOException e) {
-//            System.out.println("An error occurred.");
-//            e.printStackTrace();
-//        }
-//    }
 
     public void writeToFile(String stream,String file_name) throws IOException {
 
