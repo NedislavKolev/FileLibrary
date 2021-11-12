@@ -16,7 +16,7 @@ import java.io.*;
  *
  * //3.httpServletWriter(): writes down data into file(specific method for Servlet)
  */
-public class MaNikFileLibrary {
+public class FileRead {
 
 
     public String readFile(String file_name) throws IOException {
@@ -50,7 +50,7 @@ public class MaNikFileLibrary {
             //close the connection
             putWriter.close();
 
-            System.out.println("Received file from client: \n");
+            System.out.println("Received file from client:  \n" + stream);
             System.out.println("Successfully wrote to the file.");
         } catch (IOException e) {
             System.out.println("An error occurred.");
