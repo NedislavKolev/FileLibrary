@@ -16,12 +16,12 @@ import java.io.*;
  *
  * //3.httpServletWriter(): writes down data into file(specific method for Servlet)
  */
-public class FileRead {
+public class FR {
 
 
     public String readFile(String file_name) throws IOException {
 
-        String line = null;
+        String content = null;
 
         //specify the file name
         File file = new File(file_name);
@@ -29,16 +29,19 @@ public class FileRead {
         //read the content of the file
         try (BufferedReader br = new BufferedReader(new FileReader(file)))
         {
+            content = "";
+            String line = null;
             while ((line = br.readLine()) != null) {
                 System.out.println(line);
+                content = content + line + "\n";
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return line;
+        return content;
     }
 
-    public void writeToFile(String stream,String file_name) throws IOException {
+    public void writeToFile(String stream, String file_name) throws IOException {
 
         try {
             //Save the incoming data to a file
