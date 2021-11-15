@@ -1,4 +1,4 @@
-package Tests;
+package MaNik.File;
 
 import MaNik.File.MNFileLib;
 import org.junit.Test;
