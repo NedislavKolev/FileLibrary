@@ -18,7 +18,6 @@ import java.io.*;
  */
 public class MNFileLib {
 
-
     public String readFile(String file_name) throws IOException {
 
         String content = null;
@@ -38,10 +37,10 @@ public class MNFileLib {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return content;
+       return content;
     }
 
-    public void writeToFile(String stream, String file_name) throws IOException {
+    public String writeToFile(String stream, String file_name) throws IOException {
 
         try {
             //Save the incoming data to a file
@@ -59,5 +58,6 @@ public class MNFileLib {
             System.out.println("An error occurred.");
             e.printStackTrace();
         }
+        return file_name;
     }
 }
