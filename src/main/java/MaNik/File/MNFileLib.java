@@ -1,6 +1,5 @@
 package MaNik.File;
 
-
 import java.io.*;
 
 
@@ -18,6 +17,12 @@ import java.io.*;
  */
 public class MNFileLib {
 
+    /**
+     * Read the content of file
+     * @param file_name
+     * @return : content
+     * @throws IOException
+     */
     public String readFile(String file_name) throws IOException {
 
         String content = null;
@@ -40,6 +45,13 @@ public class MNFileLib {
        return content;
     }
 
+    /**
+     * Writing data to a file
+     * @param stream
+     * @param file_name
+     * @return : file_name
+     * @throws IOException
+     */
     public String writeToFile(String stream, String file_name) throws IOException {
 
         try {
@@ -47,8 +59,8 @@ public class MNFileLib {
             FileWriter putWriter = new FileWriter(file_name);
 
             putWriter.write(stream);
-
             putWriter.flush();
+
             //close the connection
             putWriter.close();
 
