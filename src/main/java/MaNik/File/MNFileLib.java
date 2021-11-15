@@ -16,7 +16,7 @@ import java.io.*;
  *
  * //3.httpServletWriter(): writes down data into file(specific method for Servlet)
  */
-public class FR {
+public class MNFileLib {
 
 
     public String readFile(String file_name) throws IOException {
