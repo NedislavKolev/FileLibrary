@@ -1,6 +1,5 @@
 package MaNik.File;
 
-import MaNik.File.MNFileLib;
 import org.junit.Test;
 import java.io.IOException;
 import static org.junit.Assert.assertEquals;
@@ -12,10 +11,10 @@ public class MNFileLibTests {
 
         MNFileLib lib = new MNFileLib();
 
-        String file_path = "D:\\Manik\\NedkoLibrary\\src\\main\\java\\TestFiles\\read.xml";
+        String file_path = "D:\\Java\\FileLibrary\\src\\main\\java\\TestFiles\\read.xml";
 
         String real_file = lib.readFile(file_path);
-        String expected_file = "D:\\Manik\\NedkoLibrary\\src\\main\\java\\TestFiles\\read.xml";
+        String expected_file = "D:\\Java\\FileLibrary\\src\\main\\java\\TestFiles\\read.xml";
 
         if (real_file.equals(expected_file)){
             System.out.println("File paths are the same!");
